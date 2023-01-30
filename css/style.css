@@ -1,0 +1,272 @@
+@import url('https://fonts.google.com/specimen/Raleway');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Raleway', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+.results {
+    display: flex;
+    max-width: 90%;
+    gap: 3%;
+}
+article {
+    background-color: #fff;
+    border-radius: 20px;
+}
+nav {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul { 
+    display: flex;
+    flex: 1 1 40rem;
+    text-align: end;
+    justify-content:flex-end;
+    /* align-items :right; */
+    list-style: none;
+}
+nav ul li:last-child {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.1s ease;
+}
+
+a:hover {
+    color:#0065FC ;
+    border-top: #0065FC 2px solid;
+    padding-top: 15px;
+}
+
+#logo {
+  width: 70px; 
+}
+.contenu h1 {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.contenu .punder {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    height: 31px;
+    margin-top: 30px;
+}
+.search .icon {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D9D9D9;
+    padding: 5px;
+    border-radius: 10px 0 0 10px;
+}
+.search input {
+    border: none;
+    height:30px;
+    padding: 3px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.search button {
+    height: 30px;
+    width: fit-content;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+}
+.filters {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    margin-top: 20px;
+    gap: 3%;
+}
+.info {
+    margin-top: 10px;
+}
+.hebergement {
+    background-color: #5d5d5d;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.hebergement h3 {
+    height: fit-content;
+    width: 100%;
+    margin: 10px;
+}
+.results article {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 200px;
+}
+.results article * {
+    margin-left: 15px;
+}
+.results article img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 125px;
+    margin: 0;
+}
+.populaire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #5d5d5d;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.populaire h3 {
+    height: fit-content;
+    width: 100%;
+    margin: 10px;
+}
+.note i {
+    color: #0065FC;
+    margin: 0;
+}
+.note i:last-child {
+    color: #D9D9D9;
+}
+.activite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+}
+.activite article {
+    width: 24%;
+}
+.activite article img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 90%;
+    margin: 0;
+}
+.activite h4 {
+    margin-left: 10px;
+}
+/**FOOTER***/
+
+footer {
+    background-color: #D9D9D9;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15%;
+    padding: 40px 20px 20px 50px;
+
+}
+
+h3 {
+    font-family:'Raleway', sans-serif;
+    font-weight: medium;
+    margin-bottom: 20px ;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #D9D9D9;
+    padding: 15px;
+    margin: 20px;
+    margin-bottom: 0;
+    display: flex;
+    gap: 10%;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+      background-color: green;
+    }
+    .results {
+        flex-direction: row;
+    }
+  }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+      background-color: lightblue;
+      flex-direction: column;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .results {
+        flex-direction: column;
+    }
+    .hebergement {
+        flex-direction: row;
+        height: 600px;
+    }
+    article {
+        width: 30%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1em;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: red;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .results {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.7em;
+    }
+  }
