@@ -9,9 +9,6 @@ body {
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
     max-width: 1400px;
 }
 main {
@@ -32,12 +29,12 @@ nav {
 }
 
 nav ul { 
-display: flex;
-text-align: end;
-justify-content:flex-end;
-/* align-items :right; */
-list-style: none;
-height: 25px;
+    display: flex;
+    flex: 1 1 40rem;
+    text-align: end;
+    justify-content:flex-end;
+    /* align-items :right; */
+    list-style: none;
 }
 nav ul li:last-child {
     margin-left: 20px;
@@ -196,6 +193,16 @@ article {
     box-shadow: 4px 7px 16px 0px rgba(60, 60, 60, 0.59);
     transition: 0.5s ease;
 }
+.results .populaire article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    height: 125px;
+    border-radius: 20px;
+    box-shadow: 4px 7px 16px 0px rgba(60, 60, 60, 0.59);
+    transition: 0.5s ease;
+}
 .populaire {
     display: flex;
     flex-wrap: wrap;
@@ -203,20 +210,6 @@ article {
     background-color: #b6b6b6;
     border-radius: 20px;
     margin-bottom: 50px;
-}
-.populaire article img {
-    margin: 0;
-    margin-left: 4px;
-    height: 95%;
-    width: 45%;
-    border-radius: 20px 0 0 20px;
-    object-fit: cover;
-
-}
-.populaire .leftarea {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 .populaire h3 {
     height: fit-content;
@@ -244,21 +237,10 @@ article {
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    height: 400px;
-}
-.activite h3 {
-    height: fit-content;
-    width: 100%;
-    margin: 10px;
+    height: 300px;
 }
 .activite article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 22%;
-    box-shadow: 0px 6px 5px 1px rgba(36, 36, 36, 0.4);
-    border-radius: 20px;
-    text-align: center;
+    width: 24%;
 }
 .activite article img {
     border-radius: 20px 20px 0 0;
@@ -295,35 +277,10 @@ footer p {
 
 @media only screen and (min-width: 992px) {
     body {
-      background-color: rgb(255, 255, 255);
-    }
-    nav ul {
-        flex: 1 1 40rem;
+      background-color: green;
     }
     .results {
         flex-direction: row;
-    }
-    .results article {
-        width: 30%;
-    }
-    .hebergement {
-        height: 600px;
-        width: 70%;
-    }
-    .populaire {
-        height: 600px;
-        width: 30%;
-    }
-    .populaire article {
-        width: 100%;
-    }
-    .activite {
-        margin-bottom: 75px;
-    }
-    a:hover {
-        color:#0065FC ;
-        border-top: #0065FC 2px solid;
-        padding-top: 15px;
     }
   }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -372,16 +329,7 @@ footer p {
 
 @media only screen and (max-width: 768px) {
     body {
-      background-color: rgb(255, 255, 255);
-    }
-    nav {
-        flex-direction: column;
-    }
-    nav ul{
-        height: 25px;
-    }
-    nav ul li {
-        height: fit-content;
+      background-color: red;
     }
     main {
         display: flex;
