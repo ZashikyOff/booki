@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,900;1,300;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,500;0,600;0,900;1,300;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Booki</title>
 </head>
@@ -22,23 +19,28 @@
                 <li><a href="#">Activités</a></li>        
             </ul>
         </nav>
+
     </header>
+
     <main>
+
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="punder">En plein centre-ville ou en pleine nature</p>
+
         <div class="search">
             <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
             <input type="text" placeholder="Destination">
             <button>Rechercher</button>
         </div>
         <div class="filters">
-            <h3>Filtres :</h3>
-            <button>Economique</button>
-            <button>Familial</button>
-            <button>Romantique</button>
-            <button>Animaux autorisés</button>
+            <h3>Filtres </h3>
+                <button class="option"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                <button class="option"><i class="fa-solid fa-person"></i>Familial</button>
+                <button class="option"><i class="fa-solid fa-heart"></i>Romantique</button>
+                <button class="option"><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
+
         </div>
-        <p class="info">Plus de 500 logements sont disponible dans cette ville </p>
+        <div class="info"><i class="fa-solid fa-circle-info"></i><p>Plus de 500 logements sont disponible dans cette ville </p></div>
         <div class="results">
             <section class="hebergement">
                 <h3>Hébergment a Marseille</h3>
@@ -78,49 +80,58 @@
                     <p>Nuit a partir de 25€</p>
                     <div class="note"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                 </article>
-                <button>Voir Plus</button>
+                <h4>Afficher Plus</h4>
             </section>
             <section class="populaire">
                 <h3>Les plus populaire</h3>
+                <i class="graph fa-solid fa-chart-line"></i>
                 <article>
-                    <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                    <h5>Auberge la Canebiere</h5>
-                    <p>Nuit a partir de 25€</p>
-                    <div class="note"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                    <div class="leftarea">
+                        <h5>Auberge la Canebiere</h5>
+                        <p>Nuit a partir de 25€</p>
+                        <div class="note"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
                 </article>
                 <article>
-                    <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                    <h5>Auberge la Canebiere</h5>
-                    <p>Nuit a partir de 25€</p>
-                    <div class="note"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                    <div class="leftarea">
+                        <h5>Auberge la Canebiere</h5>
+                        <p>Nuit a partir de 25€</p>
+                        <div class="note"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
                 </article>
                 <article>
-                    <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                    <h5>Auberge la Canebiere</h5>
-                    <p>Nuit a partir de 25€</p>
-                    <div class="note"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                    <div class="leftarea">
+                        <h5>Auberge la Canebiere</h5>
+                        <p>Nuit a partir de 25€</p>
+                        <div class="note"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
                 </article>
             </section>
         </div>
         <div class="activite">
+            <h3>Activités a Marseille</h3>
             <article>
                 <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                 <h4>Le vieux Port</h4>
             </article>
             <article>
-                <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                <h4>Le vieux Port</h4>
+                <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                <h4>Fort de Pomègues</h4>
             </article>
             <article>
-                <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                <h4>Le vieux Port</h4>
+                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                <h4>Parc Nationnal des Calanques</h4>
             </article>
             <article>
-                <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                <h4>Le vieux Port</h4>
+                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                <h4>Notre Dame-de-la-Garde</h4>
             </article>
         </div>
     </main>
+
     <footer>
         <div class="propos">
             <h3>A propos</h3>
