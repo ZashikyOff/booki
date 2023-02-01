@@ -9,37 +9,36 @@ body {
     color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 1400px;
 }
+
 main {
-    width: 95%;
-    display: flex;
-    align-items: center;
+    flex-grow: 1;
+    width: 100%;
 }
 .results {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 2%;
     width: 100%;
 }
 nav {
     min-height: 10vh;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
 nav ul { 
 display: flex;
+flex: 1 1 40rem;
 text-align: end;
 justify-content:flex-end;
 /* align-items :right; */
 list-style: none;
 }
 nav ul li:last-child {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 a {
@@ -48,13 +47,21 @@ a {
     transition: 0.1s ease;
 }
 
+a:hover {
+    color:#0065FC ;
+    border-top: #0065FC 2px solid;
+    padding-top: 15px;
+}
+
 #logo {
   width: 70px; 
 }
 .contenu h1 {
+    margin-left: 30px;
     margin-top: 20px;
 }
 .contenu .punder {
+    margin-left: 30px;
     margin-top: 15px;
 }
 .search {
@@ -63,9 +70,9 @@ a {
     width: fit-content;
     height: 45px;
     margin-top: 30px;
+    margin-left: 30px;
     font-family:'Raleway', sans-serif;
     font-size: 18px;
-    margin-bottom: 30px;
 }
 .search .icon {
     display: flex;
@@ -78,7 +85,7 @@ a {
     justify-content: center;
 }
 .search input {
-    border: #D9D9D9 solid 1px;
+    border: none;
     height:45px;
     padding: 3px;
     font-family:'Raleway', sans-serif;
@@ -102,8 +109,9 @@ textarea:focus, input:focus{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 30px;
     gap: 3%;
-    margin-bottom: 30px;
+    margin: 40px 20px 20px 20px ;
 }
 
 .option:focus {
@@ -122,6 +130,7 @@ color: #0065FC;
     width: fit-content;
     padding: 10px; 
     font-weight: 700;
+    font-family:'Raleway', sans-serif;
     font-size: 18px;
 }
 
@@ -132,147 +141,130 @@ color: #0065FC;
 .info {
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin: 30px 30px 30px 30px;
 }
 
-.infop {
-    height: 15px;
-    width: 15px;
+.info i {
     color: #0065FC;
-    border-radius: 50%;
-    border: #f2f2f2 solid 1px;
     margin-right: 10px;
-    padding-left: 4px;
-    font-family: 'Courier New', Courier, monospace;
-}
-article {
-    background-color: #ffffff;
 }
 .hebergement {
-    background-color: #f2f2f2;
-    border-radius: 20px;
+    background-color: #D9D9D9;
+    width: 60%;
+    padding: 15px;
+    border-radius: 15px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 50px;
+    margin: 5px;
+    margin-left: 20px;
+    overflow: hidden;
+    flex-flow: row wrap;
 }
-.hebergement h3 {
-    height: fit-content;
+.hebergement h2 {
     width: 100%;
-    margin: 10px;
-    margin-left: 30px;
 }
-.hebergement h4 {
-    height: fit-content;
-    width: 90%;
-    margin: 15px;
-}
-.results .hebergement article {
+.populaires {
+    background-color: #D9D9D9;
+    width: 35%;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    height: 200px;
-    border-radius: 20px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ease;
+    border-radius: 15px;
+    margin: 5px;
 }
-.results article:hover {
+.lieu {
+    height: fit-content;
+    width: fit-content;
+    border-radius: 15px;
+    transition: 0.5s ease-in;
+    background-color: #ffffff;
+    margin: 10px;
+    box-shadow: 4px 7px 16px 0px rgba(60, 60, 60, 0.59);
+}
+.populaires .lieu {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-top: 20px;
+    width: 90%;
+}
+.lieu:hover {
     box-shadow: 4px 7px 16px 0px rgba(57, 95, 193, 0.59);
 }
-.results article * {
-    margin-left: 15px;
+
+.imagelieu {
+    border-radius: 15px 15px 0 0;
+    width: 13em;
+    height: 8em;
+    margin: 5px;
 }
-.hebergement article img {
-    border-radius: 20px 20px 0 0;
-    border: white 3px solid;
-    width: 100%;
-    height: 125px;
-    margin: 0;
-    object-fit: cover;
+.populaires .imagelieu {
+    border-radius: 15px 0 0 15px;
+    width: 150px;
+    height: 8em;
 }
-.results .populaire article {
+.lieu h3,.lieu p {
+    margin-left: 5px;
+    padding: 5px;
+}
+.note {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: 10px;
-    height: 125px;
-    border-radius: 20px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ease;
 }
-.populaire {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    margin-bottom: 50px;
-}
-.populaire article img {
-    margin: 0;
-    height: 100%;
-    width: 45%;
-    border-radius: 20px 0 0 20px;
-    object-fit: cover;
-    border: white 3px solid;
-}
-.populaire .leftarea {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.populaire h3 {
-    height: fit-content;
-    width: 80%;
-    margin: 10px;
-    margin-left: 20px;
-}
-.note i {
+.results .fa-solid{
+    margin-left: 5px;
     color: #0065FC;
-    margin: 0;
+    margin-bottom: 5px;
 }
-.note i:last-child {
+.results .fa-solid:last-child {
     color: #D9D9D9;
 }
-.populaire .graph {
-    color: #0065FC;
-    height: 16px;
-    margin: 10px;
-}
-.activite {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 500px;
-}
-.activite article {
+.activites {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    justify-content: flex-start;
-    width: 22%;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    justify-content: center;
 }
-.activite article img {
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    width: 100%;
-    height: 90%;
-    margin: 0;
-}
-.activite h4 {
-    margin: 15px 0 0 10px;
+
+.carte-activites {
     display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 2%;
 }
-.activite h3 {
-    height: fit-content;
-    width: 100%;
-    margin: 10px;
+
+.activites img {
+    width: 15em;
+    height: 20em;
+    border-radius: 15px 15px 0px 0px;
 }
+
+.carte {
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 6px rgba(0,0,0,0.15); 
+}
+
+.activites p {
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+}
+
+.activites img, .activites p {
+    display: flex;
+    align-content: space-around;
+
+}
+
 /**FOOTER***/
+
+footer {
+    background-color: #D9D9D9;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15%;
+    padding: 40px 20px 20px 50px;
+
+}
 
 footer h3 {
     font-family:'Raleway', sans-serif;
@@ -284,206 +276,10 @@ footer p {
     margin-bottom: 10px;
 }
 footer {
-    background-color: #f2f2f2;
-    padding: 25px;
-    margin-top: 40px;
+    background-color: #D9D9D9;
+    padding: 15px;
+    margin: 20px;
     margin-bottom: 0;
     display: flex;
-    gap: 12%;
+    gap: 10%;
 }
-
-@media only screen and (min-width: 992px) {
-    body {
-      background-color: rgb(255, 255, 255);
-    }
-    header {
-        width: 90%;
-    }
-    nav {
-        width: 100%;
-    }
-    nav ul {
-        flex: 1 1 40rem;
-    }
-    .results {
-        flex-direction: row;
-    }
-    a:hover {
-        color:#0065FC ;
-        border-top: #0065FC 2px solid;
-        padding-top: 15px;
-    }
-    .results article {
-        width: 30%;
-    }
-    .hebergement {
-        height: 600px;
-        width: 60%;
-    }
-    .populaire {
-        height: 600px;
-        width: 30%;
-    }
-    .populaire article {
-        width: 85%;
-    }
-    h1 {
-        font-size: 1.5em;
-    }
-    h2 {
-        font-size: 1.2em;
-    }
-    h5 {
-        font-size: 0.9em;
-    }
-    p {
-        font-size: 0.8em;
-    }
-    article p {
-        margin: 3px;
-    }
-    footer {
-        width: 90%;
-    }
-  }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-      background-color: rgb(255, 255, 255);
-      flex-direction: column;
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-    header {
-        width: 90%;
-    }
-    nav {
-        width: 100%;
-    }
-    nav ul {
-        flex: 1 1 40rem;
-    }
-    a:hover {
-        color:#0065FC ;
-        border-top: #0065FC 2px solid;
-        padding-top: 15px;
-    }
-    .results {
-        flex-direction: column;
-    }
-    .hebergement {
-        flex-direction: row;
-        height: 600px;
-    }
-    .populaire {
-        height: 225px;
-    }
-    .results article {
-        width: 30%;
-    }
-    .activite article {
-        height: 75%;
-    }
-    .activite {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        height: 400px;
-    }
-    h1 {
-        font-size: 1.5em;
-    }
-    h2 {
-        font-size: 1.2em;
-    }
-    p {
-        font-size: 1em;
-    }
-  }
-
-@media only screen and (max-width: 768px) {
-    body {
-      background-color: rgb(255, 255, 255);
-    }
-    main {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    nav {
-        flex-direction: column;
-    }
-    nav img {
-        margin: 15px;
-    }
-    a {
-        padding: 5em;
-        padding-top: 0;
-        padding-bottom: 15px;
-        border-bottom: #f2f2f2 2px solid;
-        padding-left: auto;
-    }
-    a:visited {
-        color:#0065FC ;
-        border-bottom: #0065FC 2px solid;
-        padding-bottom: 15px;
-    }
-    .filters {
-        flex-wrap: wrap;
-    }
-    .filters h3 {
-        width: 100%;
-        height: fit-content;
-        margin: 10px;
-    }
-    .option {
-        margin: 5px;
-    }
-    .results {
-        flex-direction: column;
-    }
-    .hebergement {
-        flex-direction: row;
-        height: 100%;
-    }
-    .populaire {
-        height: 100%;
-    }
-    .results article {
-        width: 100%;
-    }
-    .activite article {
-        height: 75%;
-        width: 100%;
-        margin-bottom: 25px;
-    }
-    .activite {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    .activite article img {
-        width: 100%;
-        height: 150px;
-    }
-    .activite article h4 {
-        margin-bottom: 10px;
-    }
-    .populaire article img {
-        width: 160px;
-    }
-    h1 {
-        font-size: 1.2em;
-    }
-    h2 {
-        font-size: 1em;
-    }
-    p {
-        font-size: 0.7em;
-    }
-  }
